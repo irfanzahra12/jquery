@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>praktikum 20 - Modal Dialog</title> 
+        <script type="text/javascript"  src="asset/js/jquery-3.3.1.min.js"></script>
+        <link  rel="stylesheet" type="text/css" href="asset/css/modal.css">
+
+    </head>
+    <body>
+        <h1>Membuat modal dialog dengan JQuery  </h1>
+        <button id="tombol">KLIK SAYA</button> 
+        KLIK TOMBOl UNTUK MENAMPIKLAN MODAL  DIALOG 
+
+        <div id="bg"></div>
+        <div id="modal-kotak">
+            <div id="modal-kotak">
+                <div id="atas">
+
+                
+                Halo .ini adalah  modal dialog
+            </div>
+            <diV id="bawah">
+          <button id="tombol">CLOSE</button>
+        </div>
+
+    </body>
+    <script type="text/javascript">
+     $(document).ready(function() {
+         $('#tombol').click(function(){
+            $('#modal kotak ,#bg').fadein("slow");
+         });
+         $('#tombol .tutup').click(function(){
+            $('#modal kotak ,#bg').fadeOut("slow");
+         });
+     });
+    </script>
+    </html>
+    

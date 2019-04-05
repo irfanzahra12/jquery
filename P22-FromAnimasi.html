@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>praktikum 22 | From Animasi</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylessheet" type="text /css" href="asset/css/animasi.css">
+
+    </head>
+    <body>
+        <div class="kotak">
+            <h1>
+                Membuat Animasi From Dengan JQuery
+            </h1>
+            <from class="from">
+                <input type="text "id="nama" placeholder="Masukan nama.."name="nama">
+                <input type="text" id="alamat" placeholder="Masukan alamat.."name="alamat">
+                <input  type="text" id="pekerjaan" placeholder="Masukan pekerjaan.."name="pekerjaan">
+
+            </from>
+        </div>
+        
+       <script type="text/javascript">
+        $(document).ready(function() {
+          $('#nama').keyup(function() {
+              $('#alamat').sLideDown()
+          });
+          $('#alamat').keyup(function() {
+              $('#pekerjaan').fadeIn()
+          });
+        });
+       </script>
+    </body>
+    </html>
